@@ -3,7 +3,7 @@ name: Create and publish a docker image
 on: push
 
 env:
-  REGISTRY: ghcr.io
+  REGISTRY: ghcr.io/wayofthepie
   IMAGE_NAME: packer-build
 
 jobs:
