@@ -1,7 +1,7 @@
 FROM ubuntu:22.04
 
 RUN apt-get update \
-  && apt install -y curl gnupg2 software-properties-common
+  && apt install -y curl gnupg2 software-properties-common openssh-client
 
 RUN curl -fsSL https://apt.releases.hashicorp.com/gpg | apt-key add - \
   && apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main" \
