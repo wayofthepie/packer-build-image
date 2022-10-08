@@ -1,5 +1,6 @@
 FROM ubuntu:22.04
 
+ADD ansible.cfg /etc/ansible/
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get -qq update \
