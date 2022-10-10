@@ -6,6 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get -qq update \
   && apt-get install -qq \
     curl \
+    jq \
     gnupg2 \
     openssh-client \
     python3 \
