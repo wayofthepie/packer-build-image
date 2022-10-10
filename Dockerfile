@@ -21,6 +21,6 @@ RUN curl -fsSL https://apt.releases.hashicorp.com/gpg | apt-key add - \
   && apt-get install -qq packer > install.log 2>&1 \
   || { cat install.log && exit 1; }
 
-RUN pip install ansible
+RUN pip install ansible hvac
 
 RUN rm -fr /var/lib/apt/lists/{apt,dpkg,cache,log} /tmp/* /var/tmp/*
